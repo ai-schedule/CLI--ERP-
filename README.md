@@ -63,3 +63,36 @@ Each user has a separate `.txt` file.
 
 File structure:
 
+
+---
+
+## 📊 Data Structures Used
+
+| Feature      | Structure Used |
+|-------------|----------------|
+| Marks       | Dictionary `{subject: marks}` |
+| Attendance  | Tuple `(attended, total)` |
+| Role        | String (`admin` / `student`) |
+
+---
+
+## 🔒 Role-Based Access Control
+
+The system internally uses a `role` attribute:
+
+- `admin` → Full control
+- `student` → View-only access
+
+Role is used for permission checks but not displayed in the UI.
+
+---
+
+## ▶️ How To Run
+
+1. Open terminal
+2. Navigate to project directory
+3. Run:
+
+```bash
+python overall.py
+
